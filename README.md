@@ -2,10 +2,22 @@
 
 ReMiniS is a React Native app that lets users capture moments by taking photos and tagging them with their current GPS location. The app demonstrates the use of native Android SDK features like camera, location, background services & notifications.
 
+## Screenshots
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/aff37a35-69f9-46db-b6af-9f7d1bd9c58c" width="20%" style="margin-right: 10px;" />
+  <img src="https://github.com/user-attachments/assets/2770d22f-8a40-4518-9a4c-97621e3b3e01" width="20%" style="margin-right: 10px;" />
+  <img src="https://github.com/user-attachments/assets/56ce72f9-2041-431d-9ccb-8b1b5fa5731a" width="20%" style="margin-right: 10px;" />
+  <img src="https://github.com/user-attachments/assets/2b63168e-7448-498c-b9a2-ebaf235209b2" width="20%" />
+</p>
+<br>
+
 ## Installation for general use
 
 Download apk from [here](https://drive.google.com/file/d/1xHymFlJXJjDuv0fcd76mvR84Pe8eFs3V/view?usp=sharing).
 
+
+<br>
 
 ## Installation for local development
 
