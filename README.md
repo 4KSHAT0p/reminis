@@ -12,16 +12,15 @@ Make sure you have installed the following before cloning the project:
 
 ### How to run
 1. Clone the project via
- ```bash
-  git clone https://github.com/4KSHAT0p/reminisce.git
-  ```
+```bash
+git clone https://github.com/4KSHAT0p/reminisce.git
+```
 
 
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
+2. Install dependencies
+```bash
+npm install
+```
 
 2. Start the app
 
