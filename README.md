@@ -1,5 +1,7 @@
 # ReMiniS
 
+ReMiniS is a React Native app that lets users capture moments by taking photos and tagging them with their current GPS location. The app periodically sends notifications, helping users reminisce the memories.
+
 ## Installation
 
 ### Prerequisites
