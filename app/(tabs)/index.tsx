@@ -159,7 +159,8 @@ export default function App() {
         });
 
         // Automatically save to app gallery
-        await addPhoto(photo.uri, address);
+        // For example, to set a reminder after 5 minutes:
+        await addPhoto(photo.uri, address, 5);
 
         // Close camera and go to gallery
         setCameraVisible(false);
@@ -221,7 +222,8 @@ export default function App() {
                 <View style={styles.featureTextContainer}>
                   <Text style={styles.featureTitle}>Location Tagging</Text>
                   <Text style={styles.featureDescription}>
-                    Automatically tag memories with time and location — making it easy to reminisce.
+                    Automatically tag memories with time and location — making
+                    it easy to reminisce.
                   </Text>
                 </View>
               </View>
@@ -246,8 +248,8 @@ export default function App() {
                 <View style={styles.featureTextContainer}>
                   <Text style={styles.featureTitle}>Browse Gallery</Text>
                   <Text style={styles.featureDescription}>
-                    View all your captured photos in a dedicated
-                    gallery with details of every image.
+                    View all your captured photos in a dedicated gallery with
+                    details of every image.
                   </Text>
                 </View>
               </View>
@@ -472,7 +474,7 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 200, // Adjust this height as needed
     justifyContent: "center",
-    marginTop:25,
+    marginTop: 25,
     alignItems: "center",
     backgroundColor: "white",
     paddingVertical: 10,
@@ -670,13 +672,13 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 20,
-    color: '#333',
-    textAlign: 'center',
-    marginBottom:25,
+    color: "#333",
+    textAlign: "center",
+    marginBottom: 25,
     lineHeight: 30,
   },
   bold: {
-    fontWeight: 'bold',
-    color: '#000000', // Optional: use your brand color
+    fontWeight: "bold",
+    color: "#000000", // Optional: use your brand color
   },
 });

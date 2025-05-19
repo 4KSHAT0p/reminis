@@ -1,5 +1,5 @@
 import { Ionicons } from "@expo/vector-icons";
-import { useRouter } from "expo-router";
+import { useLocalSearchParams } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import React, { useEffect, useState } from "react";
 import {
@@ -26,16 +26,15 @@ import {
 } from "react-native-reanimated";
 import { usePhotoContext } from "../context/PhotoContext";
 import { useTabBarVisibilityContext } from "../context/TabBarVisibilityContext";
-
 const { width } = Dimensions.get("window");
 
 const Gallery = () => {
-  const router = useRouter();
   const { photos, saveToGallery, deletePhoto } = usePhotoContext();
   const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const [loading, setLoading] = useState(false);
   const { hideTabBar, showTabBar } = useTabBarVisibilityContext();
+  const { photoId } = useLocalSearchParams<{ photoId?: string }>();
 
   // Add this effect to hide/show tab bar when viewing a photo
   useEffect(() => {
@@ -45,7 +44,11 @@ const Gallery = () => {
       showTabBar();
     }
   }, [selectedPhoto]);
-
+  useEffect(() => {
+    if (photoId) {
+      handleSelectPhoto(photoId);
+    }
+  }, [photoId]);
   // Values for swipe animation
   const translateX = useSharedValue(0);
 

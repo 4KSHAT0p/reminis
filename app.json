@@ -16,7 +16,8 @@
         "foregroundImage": "./assets/images/logolow.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.reminis.app"
     },
     "web": {
       "bundler": "metro",
@@ -37,6 +38,13 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "396c3a29-e49c-4b88-ada8-7f0593e9ad4c"
+      }
+    },
+    "owner": "4kshatop"
   }
 }
