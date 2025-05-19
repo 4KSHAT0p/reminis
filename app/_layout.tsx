@@ -1,5 +1,16 @@
 import { Stack } from "expo-router";
+import { PhotoProvider } from "./context/PhotoContext";
+import { TabBarVisibilityProvider } from "./context/TabBarVisibilityContext";
 import "./globals.css";
+
 export default function RootLayout() {
-  return <Stack />;
+  return (
+    <PhotoProvider>
+      <TabBarVisibilityProvider>
+        <Stack>
+          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        </Stack>
+      </TabBarVisibilityProvider>
+    </PhotoProvider>
+  );
 }
