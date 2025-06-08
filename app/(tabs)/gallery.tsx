@@ -274,10 +274,6 @@ const Gallery = () => {
           <Text style={styles.emptySubText}>
             Start capturing your moments to see them here
           </Text>
-          <TouchableOpacity style={styles.emptyButton}>
-            <Ionicons name="camera" size={20} color="#667eea" />
-            <Text style={styles.emptyButtonText}>Take Photo</Text>
-          </TouchableOpacity>
         </View>
       </View>
     );
