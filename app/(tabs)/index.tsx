@@ -236,7 +236,7 @@ export default function Index() {
               <Text style={styles.appTitle}>ReMiniS</Text>
               <Text style={styles.appFullForm}>Reliable Minimalist Souvenirs</Text>
               {photos && (
-                <Text style={styles.photoCount}>{photos.length} memories captured</Text>
+                <Text style={styles.photoCount}>{photos.length} captured</Text>
               )}
             </View>
           </View>
