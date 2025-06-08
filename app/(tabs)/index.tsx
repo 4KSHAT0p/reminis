@@ -48,7 +48,7 @@ export default function Index() {
   const cameraRef = useRef<any>(null);
   const { hideTabBar, showTabBar } = useTabBarVisibilityContext();
 
-  const API_KEY = "556a56b2551749333fecaf90f161cbb1";
+  const API_KEY = "YOUR_OPENWEATHERMAP_API_KEY";
 
   // Function to get random GIF
   const getRandomGif = () => {
