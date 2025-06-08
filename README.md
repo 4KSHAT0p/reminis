@@ -1,50 +1,107 @@
-# Welcome to your Expo app 👋
+# ReMiniS
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+ReMiniS is a React Native app that lets users capture moments by taking photos and tagging them with their current GPS location. The app demonstrates the use of native Android SDK features like camera, location, background services & notifications.
 
-## Get started
+## Screenshots
 
-1. Install dependencies
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/aff37a35-69f9-46db-b6af-9f7d1bd9c58c" width="20%" style="margin-right: 10px;" />
+  <img src="https://github.com/user-attachments/assets/2770d22f-8a40-4518-9a4c-97621e3b3e01" width="20%" style="margin-right: 10px;" />
+  <img src="https://github.com/user-attachments/assets/56ce72f9-2041-431d-9ccb-8b1b5fa5731a" width="20%" style="margin-right: 10px;" />
+  <img src="https://github.com/user-attachments/assets/2b63168e-7448-498c-b9a2-ebaf235209b2" width="20%" />
+</p>
+<br>
 
-   ```bash
-   npm install
-   ```
+## Installation for general use
 
-2. Start the app
+Download apk from [here](https://drive.google.com/file/d/1xHymFlJXJjDuv0fcd76mvR84Pe8eFs3V/view?usp=sharing).
 
-   ```bash
-   npx expo start
-   ```
 
-In the output, you'll find options to open the app in a
+<br>
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Installation for local development
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Prerequisites
+Make sure you have installed the following before cloning the project:
+- [Node.js (LTS)](https://nodejs.org/en/download)
+- [Git](https://git-scm.com/downloads)
 
-## Get a fresh project
-
-When you're ready, run:
-
+### How to run the development build
+1. Clone the project and change the directory via
 ```bash
-npm run reset-project
+git clone https://github.com/4KSHAT0p/reminis.git
+cd reminis
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies
+```bash
+npm install
+```
 
-## Learn more
+3. Start the development server
+```bash
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+4. Download the development build apk from [here.](https://drive.google.com/file/d/1R_RTMdmRU_Uqt1xMxHMVk1LeM4Na0NZB/view?usp=sharing)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+5. Connect an android *(>10)* device with usb debugging enabled.
 
-## Join the community
+6. Press 'a' to open on the android device.
+   
+![image](https://github.com/user-attachments/assets/7dd216aa-9375-4791-bc06-c0352fc903c3)
 
-Join our community of developers creating universal apps.
+### Note:
+**We will need to rebuild again if:**
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+1. We added/removed/updated native modules (like expo-notifications, react-native-maps, etc.)
+
+2. We changed something in android/, ios/, or app.json that affects native config
+
+3. We're upgrading Expo SDK version
+
+4. We want to publish a new .apk or .aab for Play Store submission
+
+5. A new user can rebuild the application by the following commands
+
+```bash
+npx expo install expo-dev-client
+```
+```bash
+npm install -g eas-cli
+```   
+Go to https://expo.dev to create a free account
+
+```bash
+eas login
+```
+Enter your email and password to login.
+
+Then initialize EAS via:
+```bash
+eas init
+```
+
+For development build:
+```bash
+eas build --platform android --profile development
+```
+```bash
+npx expo start
+```
+
+For production build (.aab file for publishing the app on Play Store)
+```bash
+eas build --platform android --profile production
+```
+
+*Note:* To build a production .apk change the eas.json file's production block as:
+
+```bash
+    "production": {
+      "android": {
+        "buildType": "apk"
+      }
+    }
+
+```
