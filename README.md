@@ -1,25 +1,45 @@
 # ReMiniS
 
-ReMiniS is a React Native app that lets users capture moments by taking photos and tagging them with their current GPS location. The app demonstrates the use of native Android SDK features like camera, location, background services & notifications.
+**ReMiniS** is a cross-platform mobile app built with **React Native** and **Expo** that captures photos enriched with **location (GPS)**, **weather**, **date**, and **time** metadata. Photos are organized into a sleek gallery and visualized on an interactive **map** with location-based markers.
+
+---
+
+## Features
+
+- 📸 Capture photos with auto-tagging:
+  - GPS location
+  - Weather info
+  - Date & Time
+- 🖼️ View tagged photos in a clean, scrollable gallery
+- 🗺️ Explore memories on an interactive map
+- 💾 Save images to device gallery
+- 📤 Share images directly from the app
+- 🧼 Minimal and intuitive user interface
+
+---
+
+
+
+
 
 ## Screenshots
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/aff37a35-69f9-46db-b6af-9f7d1bd9c58c" width="20%" style="margin-right: 10px;" />
-  <img src="https://github.com/user-attachments/assets/2770d22f-8a40-4518-9a4c-97621e3b3e01" width="20%" style="margin-right: 10px;" />
-  <img src="https://github.com/user-attachments/assets/56ce72f9-2041-431d-9ccb-8b1b5fa5731a" width="20%" style="margin-right: 10px;" />
-  <img src="https://github.com/user-attachments/assets/2b63168e-7448-498c-b9a2-ebaf235209b2" width="20%" />
+<p align="center"> 
+  <img src="https://github.com/user-attachments/assets/59a601e7-04a2-4f00-8dc6-d3965691acc9" width="30%" style="margin-right: 10px;" />
+  <img src="https://github.com/user-attachments/assets/a921863a-cd44-4465-bc79-da880cffdc8c" width="30%" style="margin-right: 10px;" />
+  <img src="https://github.com/user-attachments/assets/560d5b58-bbf8-41b9-9c19-5759c724233c" width="30%" style="margin-right: 10px;" />
+  <img src="https://github.com/user-attachments/assets/a61f3f34-a390-4aa5-91df-437d439985e4" width="30%" style="margin-right: 10px;" />
+  <img src="https://github.com/user-attachments/assets/972a29b3-9f39-43ab-aaed-b569da489cd9" width="30%" />
 </p>
 <br>
 
-## Installation for general use
+## OUR FIRST RELEASE IS OUT! GO CHECK IT OUT
 
-Download apk from [here](https://drive.google.com/file/d/1xHymFlJXJjDuv0fcd76mvR84Pe8eFs3V/view?usp=sharing).
+### Download the apk from releases section.
 
 
 <br>
 
-## Installation for local development
+## Setup for local development
 
 ### Prerequisites
 Make sure you have installed the following before cloning the project:
@@ -35,7 +55,7 @@ cd reminis
 
 2. Install dependencies
 ```bash
-npm install
+npx expo install
 ```
 
 3. Start the development server
@@ -43,7 +63,7 @@ npm install
 npx expo start
 ```
 
-4. Download the development build apk from [here.](https://drive.google.com/file/d/1R_RTMdmRU_Uqt1xMxHMVk1LeM4Na0NZB/view?usp=sharing)
+4. Generate a development build. *(refer to the instructions below)*
 
 5. Connect an android *(>10)* device with usb debugging enabled.
 
@@ -51,7 +71,7 @@ npx expo start
    
 ![image](https://github.com/user-attachments/assets/7dd216aa-9375-4791-bc06-c0352fc903c3)
 
-### Note:
+## How to generate development/ production builds:
 **We will need to rebuild again if:**
 
 1. We added/removed/updated native modules (like expo-notifications, react-native-maps, etc.)
