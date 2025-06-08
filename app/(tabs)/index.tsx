@@ -23,7 +23,7 @@ import axios from "axios";
 
 // Add the GIF array at the top of the component
 const GIFS = [
-  require('../../assets/savers/gif1.gif'),
+  require('../../assets/savers/gif11.gif'),
   require('../../assets/savers/gif2.gif'),
   require('../../assets/savers/gif3.gif'),
   require('../../assets/savers/gif4.gif'),

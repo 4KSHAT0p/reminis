@@ -7,6 +7,7 @@ export default function TabLayout() {
         name="index"
         options={{
           title: "Home",
+          headerShown: false,
           tabBarIcon: ({ focused, color, size }) => (
             <Ionicons
               name={focused ? "home-sharp" : "home-outline"}
@@ -20,6 +21,7 @@ export default function TabLayout() {
         name="gallery"
         options={{
           title: "Gallery",
+          headerShown: false,
           tabBarIcon: ({ focused, color, size }) => (
             <Ionicons
               name={focused ? "images-sharp" : "images-outline"}
@@ -33,6 +35,7 @@ export default function TabLayout() {
         name="map"
         options={{
           title: "Map",
+          headerShown: false,
           tabBarIcon: ({ focused, color, size }) => (
             <Ionicons
               name={focused ? "navigate-sharp" : "navigate-outline"}
