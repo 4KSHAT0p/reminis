@@ -125,3 +125,11 @@ eas build --platform android --profile production
     }
 
 ```
+
+
+
+## Acknowledgements
+
+Special thanks to:
+1. [MapLibre](https://maplibre.org/), [OpenFreeMap](https://openfreemap.org/).
+2. Expo and EAS.
