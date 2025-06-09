@@ -57,13 +57,13 @@ cd reminis
 ```bash
 npx expo install
 ```
+3. Generate a development build. *(refer to the instructions below)*
 
-3. Start the development server
+4. Start the development server
 ```bash
 npx expo start
 ```
 
-4. Generate a development build. *(refer to the instructions below)*
 
 5. Connect an android *(>10)* device with usb debugging enabled.
 
